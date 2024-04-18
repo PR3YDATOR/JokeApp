@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DataCell" id="gTV-IL-0wX" customClass="DataCell" customModule="APICalling" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="421" height="345"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="421" height="345"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How do you find Will Smith in the snow?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eI8-jG-Bpu">
+                        <rect key="frame" x="20" y="19.999999999999996" width="381" height="55.666666666666657"/>
+                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="24"/>
+                        <color key="textColor" name="color_4E4B66"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You follow his fresh prints." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bb4-Nj-g8w">
+                        <rect key="frame" x="20" y="80.666666666666671" width="381" height="18.666666666666671"/>
+                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="16"/>
+                        <color key="textColor" name="color_667080"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qcJ-Wd-Hw9">
+                        <rect key="frame" x="20" y="119.33333333333331" width="381" height="45"/>
+                        <color key="backgroundColor" name="color_1877F2"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="oFJ-X4-JGc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="16"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="Add To Favorites">
+                            <color key="titleColor" name="color_EEF1F4"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layerCornerRadius">
+                                <real key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="didTapButtonStar:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Mjp-cP-ALj"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nds-01-9hq">
+                        <rect key="frame" x="20" y="344" width="381" height="1"/>
+                        <color key="backgroundColor" name="color_667080"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="RhE-xb-Jog"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="Nds-01-9hq" firstAttribute="trailing" secondItem="qcJ-Wd-Hw9" secondAttribute="trailing" id="7E7-m6-1uT"/>
+                <constraint firstItem="qcJ-Wd-Hw9" firstAttribute="leading" secondItem="bb4-Nj-g8w" secondAttribute="leading" id="CXc-Q1-mgT"/>
+                <constraint firstItem="bb4-Nj-g8w" firstAttribute="top" secondItem="eI8-jG-Bpu" secondAttribute="bottom" constant="5" id="DfS-Jq-jJZ"/>
+                <constraint firstItem="Nds-01-9hq" firstAttribute="top" relation="greaterThanOrEqual" secondItem="qcJ-Wd-Hw9" secondAttribute="bottom" constant="19" id="I2t-Vo-fOf"/>
+                <constraint firstItem="bb4-Nj-g8w" firstAttribute="trailing" secondItem="eI8-jG-Bpu" secondAttribute="trailing" id="PGw-fI-NsW"/>
+                <constraint firstItem="Nds-01-9hq" firstAttribute="leading" secondItem="qcJ-Wd-Hw9" secondAttribute="leading" id="R5V-wP-WSg"/>
+                <constraint firstAttribute="trailing" secondItem="eI8-jG-Bpu" secondAttribute="trailing" constant="20" id="Sa3-0B-9Yf"/>
+                <constraint firstItem="eI8-jG-Bpu" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="20" id="W3D-0a-a0q"/>
+                <constraint firstItem="qcJ-Wd-Hw9" firstAttribute="trailing" secondItem="bb4-Nj-g8w" secondAttribute="trailing" id="eF0-lg-NQu"/>
+                <constraint firstItem="bb4-Nj-g8w" firstAttribute="leading" secondItem="eI8-jG-Bpu" secondAttribute="leading" id="pZF-eK-RGt"/>
+                <constraint firstItem="eI8-jG-Bpu" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="xqC-Ul-rad"/>
+                <constraint firstItem="qcJ-Wd-Hw9" firstAttribute="top" secondItem="bb4-Nj-g8w" secondAttribute="bottom" constant="20" id="yEu-hQ-3F5"/>
+                <constraint firstAttribute="bottom" secondItem="Nds-01-9hq" secondAttribute="bottom" id="zTL-5d-ZS2"/>
+            </constraints>
+            <size key="customSize" width="421" height="345"/>
+            <connections>
+                <outlet property="btnStar" destination="qcJ-Wd-Hw9" id="VZB-VR-ByV"/>
+                <outlet property="lblSubTitle" destination="bb4-Nj-g8w" id="Vbs-kv-Mib"/>
+                <outlet property="lblTitle" destination="eI8-jG-Bpu" id="pHp-Pg-PMR"/>
+            </connections>
+            <point key="canvasLocation" x="270.99236641221376" y="46.126760563380287"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="color_1877F2">
+            <color red="0.32156862745098042" green="0.64313725490196083" blue="0.27843137254901962" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="color_4E4B66">
+            <color red="0.30588235294117649" green="0.29411764705882354" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="color_667080">
+            <color red="0.40000000000000002" green="0.4392156862745098" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="color_EEF1F4">
+            <color red="0.93333333333333335" green="0.94509803921568625" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>
